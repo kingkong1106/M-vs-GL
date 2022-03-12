@@ -1,0 +1,212 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="https://colibriwp.com/blog/wp-content/uploads/2019/08/kseniya-lapteva-LdPFsNeCPGk-unsplash.jpg">
+<center>
+  <h3 class="btn-primary heading"> Case study of Google lens and Mobilenet
+    <center>
+      
+    </center>
+  <h3>Google lens</h4>
+    <img id="google" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Google_Lens_-_new_logo.png">
+  <br>
+  <h1>VS</h3>
+  <br>
+  <div class="btn btn-primary">
+      <h3>Mobilenet</h4>
+    </div>
+    <br>
+    <div id="Basketdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        <span>
+            <img id="Basketball" src="Basketball.jpg"
+             <br>
+            <div>
+            <span>
+                <h5>output on google lens</h5>
+                <h5>output on Mobilenet</h5>
+            </span>
+            <h6>result-</h6>
+            <h2>GOOGLE LENS</h2>
+            <br>
+              
+            </div>
+        </span>
+    </div>
+    <br>
+    <div id="Bottlediv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+      <span>
+          <img id="Bottle" src="bottle.jpg"
+           <br>
+          <div>
+          <span>
+              <h5>output on google lens</h5>
+              <h5>output on Mobilenet</h5>
+          </span>
+          <h6>result-</h6>
+          <h2>GOOGLE LENS</h2>
+          <br>
+            
+          </div>
+      </span>
+  </div>
+  <br>
+  <div id="Cereal_Boxdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+    <span>
+        <img id="Cereal_Box" src="Cereal_Box.jpg"
+         <br>
+        <div>
+        <span>
+            <h5>output on google lens</h5>
+            <h5>output on Mobilenet</h5>
+        </span>
+        <h6>result-</h6>
+        <h2>GOOGLE LENS</h2>
+
+        <br>
+          
+        </div>
+    </span>
+</div>
+<br>
+<br>
+<div id="Frisbeediv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Frisbee" src="Frisbee.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="Hatdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Hat" src="Hat.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>Mobilenet</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="Pillowdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Pillow" src="Pillow.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="Racketdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Racket" src="Racket.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="Shoediv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Shoe" src="Shoe.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="TeddyBeardiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="TeddyBear" src="TeddyBear.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<br>
+<div id="Tissue_Boxdiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+  <span>
+      <img id="Tissue_Box" src="Tissue_box.jpg"
+       <br>
+      <div>
+      <span>
+          <h5>output on google lens</h5>
+          <h5>output on Mobilenet</h5>
+      </span>
+      <h6>result-</h6>
+      <h2>GOOGLE LENS</h2>
+      <br>
+        
+      </div>
+  </span>
+</div>
+<div id="info" class="btn btn-warning">
+  <h6>According to the information above it shows that Google lens is more accurate than Mobilenet, since Google lens predicted 9 images and Mobilnet only predicted 1. So according to my case study, Google lens is more accurate than Mobilnet</h6>
+</div>
+</center>
+
+ 
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
